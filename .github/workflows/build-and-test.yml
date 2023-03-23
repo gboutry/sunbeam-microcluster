@@ -1,8 +1,9 @@
 name: Build/Test
 
 on:
-  - push
-  - pull_request
+  pull_request:
+  push:
+  workflow_call:
 
 jobs:
   lint:
